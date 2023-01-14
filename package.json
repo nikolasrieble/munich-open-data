@@ -33,5 +33,9 @@
 	"dependencies": {
 		"@onsvisual/svelte-maps": "^1.1.2",
 		"maplibre-gl": "^2.4.0"
+	},
+	"engines": {
+		"node" : "^16 || ^18",
+		"yarn": "^1.2.0"
 	}
 }
