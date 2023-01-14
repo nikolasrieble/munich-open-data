@@ -14,11 +14,11 @@
 
 <svelte:head>
 	<title>About</title>
-	<meta name="description" content="About this app" />
+	<meta name="Map" content="Map" />
 </svelte:head>
 
 <div class="text-column">
-	<h1>This should show a map below</h1>
+	<h1>Welcome to Munich</h1>
 
 	<span>
 		<Map
