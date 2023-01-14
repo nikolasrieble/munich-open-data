@@ -3,9 +3,10 @@
 
 	import { onMount } from 'svelte';
 	import { Map } from '@onsvisual/svelte-maps';
+	import { longitude, latitude } from './munich';
 	import maplibre from 'maplibre-gl';
 	let map;
-	let zoom;
+	let zoom = 12;
 	let center = {};
 	onMount(() => {
 		map.addControl(new maplibre.NavigationControl(), 'top-left');
@@ -24,7 +25,7 @@
 		<Map
 			id="map"
 			style="https://api.maptiler.com/maps/streets/style.json?key=wxZrbxq3dPx17ds8LO59"
-			location={{ lng: 11.57500, lat: 48.13750, zoom: 12 }}
+			location={{ lng: longitude, lat: latitude, zoom }}
 			bind:map
 			bind:zoom
 			bind:center
